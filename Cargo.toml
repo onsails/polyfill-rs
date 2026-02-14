@@ -15,7 +15,7 @@ homepage = "https://github.com/floor-licker/polyfill-rs"
 # Pin base64ct to avoid Edition 2024 requirement
 base64ct = "=1.6.0"
 # Async runtime and futures
-tokio = { version = "1.41", features = ["full"] }
+tokio = { version = "1.49", features = ["full"] }
 futures = "0.3"
 futures-util = "0.3"
 
@@ -36,8 +36,8 @@ alloy-signer = { version = "1.6", features = ["eip712"] }
 alloy-signer-local = { version = "1.6", features = ["eip712"] }
 
 # Numeric types
-rust_decimal = { version = "1.36", features = ["serde-with-str"] }
-rust_decimal_macros = "1.36"
+rust_decimal = { version = "1.40", features = ["serde-with-str"] }
+rust_decimal_macros = "1.40"
 
 # Error handling
 anyhow = "1.0"
@@ -56,7 +56,7 @@ tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 chrono = { version = "0.4", features = ["serde"] }
 
 # Utilities
-uuid = { version = "1.0", features = ["v4", "serde"] }
+uuid = { version = "1.21", features = ["v4", "serde"] }
 url = "2.5"
 bytes = "1.11.1"
 rand = "0.8"
@@ -67,8 +67,8 @@ tokio-tungstenite = { version = "0.21", optional = true, features = ["native-tls
 [dev-dependencies]
 criterion = { version = "0.5", features = ["html_reports"] }
 tokio-test = "0.4"
-mockito = "1.0"
-proptest = "1.0"
+mockito = "1.7"
+proptest = "1.10"
 env_logger = "0.10"
 
 [features]
